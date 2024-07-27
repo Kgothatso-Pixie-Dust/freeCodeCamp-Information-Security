@@ -1,7 +1,8 @@
 const express = require('express');
-const hemlet = require('hemlet');
+const helmet = require('hemlet');
 const app = express();
 app.helmet.hidePoweredBy();
+app.use(helmet.hidePoweredBy({setTo: 'PHP 4.2.0'}))
 const PORT = process.env.PORT || 3030;
 app.listen(PORT, () => {
   console.log(`Useful Programmer Info Security App Server Started on P;/ort ${PORT}`);
