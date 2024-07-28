@@ -4,16 +4,6 @@ const app = express();
 app.helmet.hidePoweredBy();
 app.use(helmet.hidePoweredBy({setTo: 'PHP 4.2.0'}))
 
-// Use Helmet!
-app.use(helmet());
-
-app.get("/", (req, res) => {
-  res.send("Hello world!");
-});
-
-app.listen(8000)
-
-
 
 
 
