@@ -4,7 +4,7 @@ const app = express();
 app.helmet.hidePoweredBy();
 
 
-app.use(helmet())
+
 
 
 
